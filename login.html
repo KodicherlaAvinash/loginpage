@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<title>Event Registration Form</title>
+<style>
+  body{
+    font-family: arial,sans-serif;
+    background-color: white;
+    maxx-width: 400px;
+    margin: auto;
+    padding:20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px gray;
+  }
+  h2 {
+    text-aling: center;
+    color:  #333;
+  }
+  label {
+    display: block;
+    \margin-top: 10px;
+    font-weight: bold;
+  }
+  input[type="text"]
+  input[type="email"]
+  input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  buttom {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color:white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover  {
+    background-color: #218838;
+  }
+  .message   {
+    text-align: center;
+    margin-top: 20px;
+    color: green;
+  }
+</style>
+</head>
+<body>
+<div class="form-container">
+  <h2>event registration</h2>
+  <form id="registrationform" onsubmit="return registerUser();">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" required>
+
+  </form>
+</div>
+</body>
+</html>
